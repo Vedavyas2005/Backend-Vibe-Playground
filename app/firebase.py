@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-cred_path = os.getenv("FIREBASE_CRED_PATH", "")
+cred_path = os.getenv("FIREBASE_CRED_PATH")
 cred = credentials.Certificate(cred_path)
 firebase_admin.initialize_app(cred)
 
