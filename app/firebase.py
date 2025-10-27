@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-cred_path = os.getenv("FIREBASE_CRED_PATH", "D:/vibe_playground_backend/ethercraft-810ec-firebase-adminsdk-fbsvc-54c0daeb6f.json")
+cred_path = os.getenv("FIREBASE_CRED_PATH", "")
 cred = credentials.Certificate(cred_path)
 firebase_admin.initialize_app(cred)
 
